@@ -21,3 +21,4 @@ Feature: Gestionar carrito de compras
 
     |producto|resultado esperado|
     |campera|producto no disponible|
+    
