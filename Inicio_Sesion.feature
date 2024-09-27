@@ -40,6 +40,7 @@ Feature: Inicio de sesion
         |   Chorme     | 
         |   Firefox    |
         |   Opera GX   | 
+        |   Edge       |
     
 
     Examples: 
