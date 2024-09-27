@@ -18,7 +18,8 @@ Feature: Inicio de sesion
         |   browser    |
         |   Chorme     | 
         |   Firefox    |
-        |   Opera GX   | 
+        |   Opera GX   |
+        |   Edge       | 
 
     
     Examples:
