@@ -2,6 +2,7 @@
 @web @Windows
 @testlogin
 @pruebapositiva
+
 Feature: Inicio de sesion 
 
     Background: Se encuentra en @https://demo.guru99.com/test/newtours/register.php
@@ -28,6 +29,7 @@ Feature: Inicio de sesion
     |user1|password1|sesion iniciada|
 
 @pruebanegativa
+
     Scenario Outline: Inicio de sesion con datos no validos 
         Given el usuario se encuentra en la pagina de inicio de sesion
         And rellenar los campos de *usuario* y *contraseña* 
