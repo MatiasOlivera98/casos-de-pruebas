@@ -1,5 +1,6 @@
-@https://www.mercadolibre.com.ar/
+@https://demo.guru99.com/test/newtours/register.php
 @web @Windows
+@testlogin
 Feature: Gestionar carrito de compras
     Background: Dado que el usuario ya esta registrado y esta en la pagina principal
     Scenario Outline: Agregar productos al carrito

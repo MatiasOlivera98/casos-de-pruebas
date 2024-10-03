@@ -1,5 +1,8 @@
-@https://www.mercadolibre.com.ar/
+@https://demo.guru99.com/test/newtours/register.php
 @web @Windows
+@testlogin
+@pruebapositiva
+
 Feature: Restablecer contraseña  
     Background: El usuario tiene una cuenta valida  
     Scenario Outline: Recuperación de contraseña exitosa
@@ -11,9 +14,18 @@ Feature: Restablecer contraseña
         Then el sistema notificara al usuario con un mensaje que dice *contraseña restablecida exitosamente*
 
     Examples:
-    |date||resultado esperado|
-    |valid register||contraseña restablecida|
-    |new password and confirm password||contraseña guardada|
+        | browser  |
+        |  Chorme  |
+        | Firefox  |
+        | Opera GX |
+        |  Edge    |    
+
+    Examples:
+        |date||resultado esperado|
+        |valid register||contraseña restablecida|
+        |new password and confirm password||contraseña guardada|
+
+@pruebapositiva
 
     Scenario Outline: Recuperación de contraseña exitosa
         Given el usuario accede a la pagina de inicio de sesion 
@@ -24,11 +36,18 @@ Feature: Restablecer contraseña
         And el sistema solicitara al usuario que ingrese un codigo de verificacion enviado a su dispositivo movil 
         Then el usuario ingresara una nueva contraseña y confirmara la misma 
         And el sistema actualiza la contraseña del usuario
+    
+    Examples:
+        | browser  |
+        |  Chorme  |
+        | Firefox  |
+        | Opera GX |
+        |  Edge    |
 
     Examples: 
-    |date||resultado esperado|
-    |valid register||enlace de redirección|
-    |correo electronico||enlace redirección|
-    |dispositivo movil||codigo de verificacion|
-    |new password and confirm password||contraseña confirmada|
+        |date||resultado esperado|
+        |valid register||enlace de redirección|
+        |correo electronico||enlace redirección|
+        |dispositivo movil||codigo de verificacion|
+    |   new password and confirm password||contraseña confirmada|
     
