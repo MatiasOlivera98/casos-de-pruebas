@@ -21,6 +21,7 @@ Feature: Restablecer contraseña
         |  Edge    |    
 
     Examples:
+
         |date||resultado esperado|
         |valid register||contraseña restablecida|
         |new password and confirm password||contraseña guardada|
@@ -38,6 +39,7 @@ Feature: Restablecer contraseña
         And el sistema actualiza la contraseña del usuario
     
     Examples:
+
         | browser  |
         |  Chorme  |
         | Firefox  |
@@ -45,6 +47,7 @@ Feature: Restablecer contraseña
         |  Edge    |
 
     Examples: 
+    
         |date||resultado esperado|
         |valid register||enlace de redirección|
         |correo electronico||enlace redirección|
