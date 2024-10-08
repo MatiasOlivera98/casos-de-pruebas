@@ -52,5 +52,5 @@ Feature: Restablecer contraseña
         |valid register||enlace de redirección|
         |correo electronico||enlace redirección|
         |dispositivo movil||codigo de verificacion|
-    |   new password and confirm password||contraseña confirmada|
-    
+        |new password and confirm password||contraseña confirmada|
+        
